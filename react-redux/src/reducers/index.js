@@ -1,6 +1,5 @@
 const initialState={
     posts:[{id: 1, title: 'Test Post'}],
-
 }
 const reducer=(state=initialState,action)=>{
 if(action.type==='ADD_POST'){
