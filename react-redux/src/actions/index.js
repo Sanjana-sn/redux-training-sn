@@ -1,13 +1,6 @@
-export function increment() {
-    return {
-       type: 'INCREMENT'
+export function addPost(payload) {
+    return{
+        type:'ADD_POST',
+        payload
     }
- }
- export function decrement() {
-    return {
-       type: 'DECREMENT'
-    }
- }
- export function reset() {
-    return { type: 'RESET' }
- }
+}
