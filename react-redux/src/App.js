@@ -7,8 +7,9 @@ class App extends Component {
    render() {
       return (
          <div className = "App">
-            Welcome to react
+            <div>Welcome to Get api method</div>
             <div><GetApi /></div>
+            <div>Welcome to Post api method</div>
             <div><PostApi /></div>
          </div>
       );
