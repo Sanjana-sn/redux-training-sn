@@ -31,17 +31,17 @@ export default class PostApi extends React.Component{
     }
     render(){
         return(
-            <div>
+            <div style={{padding:"2%"}}>
                 <form onSubmit={this.submitHandle}>
-                <div style={{display:"flex",alignItems:"center"}}>
-                <div style={{flex:0.5}}>Person Name:</div>
-                <input style={{flex:1}} type="text" nsme="name" value={this.state.name} onChange={this.nameHandle} />
+                <div style={{display:"flex",alignItems:"center",margin:"2%"}}>
+                <div style={{flex:0.2}}>Person Name:</div>
+                <input style={{flex:1}} type="text" name="name" value={this.state.name} onChange={this.nameHandle} />
                 </div>
-                <div style={{display:"flex",alignItems:"center"}}>
-                <div style={{flex:0.5}}>Address:</div>
+                <div style={{display:"flex",alignItems:"center",margin:"2%"}}>
+                <div style={{flex:0.2}}>Address:</div>
                 <textarea col="10" row="4" style={{flex:1}} name="address" value={this.state.address} onChange={this.addressHandle} />
                 </div>
-                <div><button type="submit">Submit</button></div>
+                <div style={{margin:"2%"}}><button type="submit">Submit</button></div>
                 </form>
             </div>
         )
